@@ -1,0 +1,416 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ddebf7;
+  box-sizing: border-box;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #13065e;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li a {
+  color: #4749be;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Auth Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #494b64;
+  padding: 20px;
+}
+
+/* Auth Card */
+.auth-card {
+  background-color: #f3e9b1;
+  padding: 40px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #faeb95;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #f3e5a7;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Bottom Text */
+.bottom-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.bottom-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  padding: 2rem;
+}
+
+.dashboard-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+/* Home Container */
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #666;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Patient and Appointment Lists */
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.patient-list,
+.appointment-list {
+  list-style: none;
+  padding:50px;
+}
+
+.patient-item,
+.appointment-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Appointment List Items */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-left: 5px solid #3498db;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Form Styling */
+form {
+  display:block;
+  flex-direction:row;
+  align-items: center;
+  gap: 15px;
+  background-color: #40399e;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.container1{
+
+display:flex;
+flex-direction:column;
+align-items: center;
+gap: 15px;
+background-color: #40399e;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #033392;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.container2{
+  display:flex;
+flex-direction:column;
+align-items: center;
+gap: 15px;
+background-color: #01053a;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+width: 80%;
+}
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #014775;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    max-width: 100%;
+  }
+}
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between images */
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  max-width: 1000%;
+  height: auto;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+/* Container setup for form and image */
+.register-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+  padding: 20px;
+}
+
+.register-image img {
+  width: 800px;
+  height:600px;
+  border-radius: 10px;
+}
+
+/* Form container styling */
+.register-form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.register-form-container h2 {
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #2b6777;
+  text-align: center;
+}
+
+/* Success and Error messages */
+.success-message {
+  color: rgb(10, 4, 94);
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  text-align: left;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #7cacb9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #0f1f22;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column;
+  }
+  .homeimage img{
+    background-image:1000%;
+  }
+  .register-image img {
+    width: 1000%;
+    background-image:cover ;
+    margin-bottom: 60px;
+  }
+
+  .register-form-container {
+    width: 300%;
+  }
+}
